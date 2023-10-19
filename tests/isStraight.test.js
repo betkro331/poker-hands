@@ -8,3 +8,8 @@ test('check that isStraight returns truthy if straight', () => {
 });
 
 // Negativt test
+
+test('check that isStraight returns falsey if not isStraight', () => {
+  let hand = new Hand('♣7', '♠6', '♠5', '♥4', '♥J');
+  expect(CompareHands.isFlush(hand)).toBeFalsy();
+});

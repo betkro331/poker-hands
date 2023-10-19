@@ -20,7 +20,7 @@ const CompareHands = require('./CompareHands');
 // let hand1 = new Hand('♥J', '♥8', '♥4', '♥3', '♥2');
 // let hand2 = new Hand('♥1', '♣3', '♦J', '♥7', '♣5');
 
-// isStrait
+// isStraight
 // let hand1 = new Hand('♣7', '♠6', '♠5', '♥4', '♥3');
 // let hand2 = new Hand('♣9', '♣T', '♣J', '♦Q', '♣K');
 

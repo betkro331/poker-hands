@@ -8,3 +8,7 @@ test('Test that threeOfAKind returns truthy is three of a kind', () => {
 });
 
 // Negativt test
+test('check that isThreeOfAKind returns falsey if not ThreeOfAKind', () => {
+  let hand = new Hand('♣2', '♣6', '♥4', '♣8', '♣7');
+  expect(CompareHands.isFlush(hand)).toBeFalsy();
+});
