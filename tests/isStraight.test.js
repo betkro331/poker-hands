@@ -7,3 +7,4 @@ test('check that isStraight returns truthy if straight', () => {
   expect(CompareHands.isStraight(hand)).toBeTruthy();
 });
 
+// Negativt test
