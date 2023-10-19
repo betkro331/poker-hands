@@ -15,9 +15,9 @@ test('check that isFlush returns falsey if not flush', () => {
 });
 
 test('check that isFlush returns a higher score for a stronger hand (if two hands but with flush)', () => {
-  let hand1 = new Hand('♣2', '♣6', '♣4', '♣8', '♣7');
-  let hand2 = new Hand('♦T', '♦9', '♦5', '♦Q', '♦A');
+  let hand1 = new Hand('♦T', '♦9', '♦5', '♦Q', '♦A');
+  let hand2 = new Hand('♣2', '♣6', '♣4', '♣8', '♣7');
   let hand1Score = CompareHands.isFlush(hand1);
   let hand2Score = CompareHands.isFlush(hand2);
-  expect(hand2Score).toBeGreaterThan(hand1Score);
+  expect(hand1Score).toBeGreaterThan(hand2Score);
 });
